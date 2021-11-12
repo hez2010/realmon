@@ -135,12 +135,12 @@ namespace realmon
         static void RunTest()
         {
             Console.WriteLine("------- press s for current stats or any other key to exit -------");
-            var k = Console.ReadKey(true);
+            //var k = Console.ReadKey(true);
 
-            while (k.Key == ConsoleKey.S)
+            while (true)
             {
                 PrintLastStats();
-                k = Console.ReadKey(true);
+Thread.Sleep(1000);
             }
             session.Dispose();
         }
