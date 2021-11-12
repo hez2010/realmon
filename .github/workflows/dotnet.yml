@@ -24,4 +24,4 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Run
-      run: dotnet ./src/bin/Debug/net6.0/GCRealTimeMon.dll -n dotnet
+      run: cd ./src && dotnet ./bin/Debug/net6.0/GCRealTimeMon.dll -n dotnet
